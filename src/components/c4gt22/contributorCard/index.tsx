@@ -31,7 +31,7 @@ export const ContributorCard: React.FC<ContributorCardProps> = ({ contributorsDa
 
     return (
         <div>
-            <h3 className="text-4xl lg:text-5xl w-3/4 mx-auto text-center font-bold text-blue-950 py-10 mt-8">{children}</h3>
+            <h3 className="text-4xl lg:text-5xl w-3/4 mx-auto text-center font-bold text-color-primary py-10 mt-8">{children}</h3>
             <div className="flex w-5/6 mx-auto mt-8 justify-center flex-wrap">
                 {
                     contributorsList.map((contributor, index) => (

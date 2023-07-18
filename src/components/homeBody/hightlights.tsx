@@ -39,7 +39,7 @@ export const Hightlights = () => {
             </svg>
           </div>
         </div>
-        <div className="bg-secondary-color flex flex-col items-center  p-4 sm:p-5 text-color-primary w-full md:w-1/3">
+        <div className="bg-secondary-color flex flex-col items-center  p-4 sm:p-5 text-blue-950 w-full md:w-1/3">
           <h2 className="font-bold ">C4GT Mentors</h2>
           <p className="font-regular">Here is what past mentors have to say.</p>
           <div className="w-full">

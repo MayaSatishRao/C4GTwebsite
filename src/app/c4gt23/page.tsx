@@ -17,7 +17,7 @@ const C4GT23Home = () => {
 
     return (
         <>
-            <div className="c4gt23-container bg-white">
+            <div className="c4gt23-container bg-color-dark">
                 <HeaderCard headerData={headerContent} />
                 <InfoBar23 />
                 <ContributorCard contributorsData={contributorsData} edition="c4gt23">

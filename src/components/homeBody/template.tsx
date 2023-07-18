@@ -23,7 +23,7 @@ export const Template: React.FC<TemplateProps> = ({
   return (
     <div className={`${title.includes("Community")?style.container2:style.container} w-11/12 mx-auto h-full flex flex-col items-center`}>
       <h1 className="font-bold text-color-primary mb-4 text-center">{title}</h1>
-      <div className="bg-secondary-color text-color-primary border border-gray-300 shadow-md p-4 mx-[1.8975rem]">
+      <div className="bg-secondary-color text-blue-950 border border-gray-300 shadow-md p-4 mx-[1.8975rem]">
         {description}
       </div>
       {title !== "C4GT Community Program" ? (

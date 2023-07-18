@@ -4,12 +4,15 @@ import { c4gtLogo } from "@/component/assets/images";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiChevronDown } from "react-icons/fi";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export const Navbar = () => {
   const pathName = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+
+  
 
   useEffect(() => {
     const menuIcon = document.querySelector(".navbar-burger");
@@ -43,6 +46,7 @@ export const Navbar = () => {
     }
     return path == pathName ? "text-red-700" : "";
   };
+
 
   return (
     <div className="flex text-color-primary justify-between mx-4 lg:py-4 ">
@@ -135,13 +139,24 @@ export const Navbar = () => {
               Digital Public Goods
             </Link>
           </li>
+          <li
+            className={`lg:px-4 sm:px-3 cursor-pointer hover:text-red-700 ${isActive(
+              "/c4gt22"
+            )}`}
+          >
+            <div
+              className="block pr-4 text-inherit hover:text-red-700 no-underline rounded "
+            >
+              <ThemeSwitcher/>
+            </div>
+          </li>
         </ul>
       </div>
       <div className="md:hidden absolute inset-y-0 right-0">
-        <button className="navbar-burger text-black-600 m-12 pr-4">
+        <button className="navbar-burger text-color-dark m-12 pr-4">
           {menuOpen ? (
             <svg
-              className="h-6 w-6 fill-current text-black"
+              className="h-6 w-6 fill-current text-color-dark"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -150,7 +165,7 @@ export const Navbar = () => {
             </svg>
           ) : (
             <svg
-              className="h-5 w-5 fill-current text-black"
+              className="h-5 w-5 fill-current text-color-dark"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -237,6 +252,13 @@ export const Navbar = () => {
                 >
                   Digital Public Goods
                 </Link>
+              </li>
+              <li className="cursor-pointer mb-4 hover:text-red-700 ">
+                <div
+                  className="block h-10 w-10 text-sm text-inherit font-semibold no-underline rounded-full bg-white"
+                >
+                  <ThemeSwitcher/>
+                </div>
               </li>
             </ul>
           </div>

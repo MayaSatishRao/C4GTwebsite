@@ -16,7 +16,7 @@ const C4GT22Home = () => {
   }
 
   return (
-    <div className="c4gt22-container">
+    <div className="c4gt22-container bg-color-dark">
       <HeaderCard headerData={headerContent} />
       <InfoBar />
       <InfoCard />

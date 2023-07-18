@@ -3,6 +3,7 @@ import { Footer, Navbar } from "@/component/components";
 import React, { PropsWithChildren } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Metadata } from "next";
+import Provider from "./provider";
 
 export const metadata: Metadata = {
   title: 'Code for GovTech | Digital Public Goods',
@@ -17,10 +18,12 @@ const Layout = ({ children }: PropsWithChildren) => {
         <link rel='icon' href='/favicon.ico' sizes="any"/>
       </head>
       <body>
+        <Provider>
         <Navbar />
         {children}
         <hr></hr>
         <Footer />
+        </Provider>
       </body>
     </html>
   );

@@ -11,7 +11,7 @@ export const metadata :
 
 const DigitalPublicGoods = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-color-dark">
       <Info />
       <Content />
     </div>

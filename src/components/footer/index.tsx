@@ -6,11 +6,11 @@ export const Footer = () => {
   return (
     <div className="xs:mx-1.5 sm:mx-5 md:mx-auto sm:flex sm:flex-row-reverse justify-around  sm:pb-6 lg:mb-5 py-8 text-black" id="footer">
       <div className="footerBox2 grid grid-row-2 sm:place-items-start place-items-center">
-        <h4 className="lg:text-2xl md:text-xl text-lg">Contact Us</h4>
-        <p className="lg:text-base md:text-sm text-xs">
+        <h4 className="lg:text-2xl md:text-xl text-lg text-color-dark">Contact Us</h4>
+        <p className="lg:text-base md:text-sm text-xs text-color-dark">
           Have questions? Write to us at&nbsp;
           <b>
-            <a className="text-inherit" href="mailto:admin@codeforgovtech.in">admin@codeforgovtech.in</a>
+            <a className="text-inherit text-color-dark" href="mailto:admin@codeforgovtech.in">admin@codeforgovtech.in</a>
           </b>
         </p>
       </div>
